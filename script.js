@@ -415,7 +415,43 @@
 
    });
 
+   var apiKey = '91ddc1e7bc17de14cc25a5300432bc98';
+   var basePath = '';
+   var sizeOptions = '';
+   var logo_sizes = '';
+   var poster_sizes = '';
+   var profile_sizes = '';
 
+   var siteConfig = 'https://api.themoviedb.org/3/configuration?api_key='+apiKey;
+
+   console.log(siteConfig);
+
+   $.getJson(siteConfig, function(data){
+      console.log(data);
+      basePath = data.images.base_url;
+      sizeOptions = data.images.poster_sizes;
+      logo_sizes = logo_sizes['original'];
+      posterSize = 'w300'
+      profileSizes = profile_sizes['original'];
+   });
+
+   var nowPlaying = 'http://api.themoviedb.org/3/movie/now_playing?api_key='+apiKey;
+
+
+   $.getJson(siteConfig, function(data){
+      var html = "";
+      var x = 0;
+      movieArray = data.results;
+      for (i=0; i<movieArray/length; i++){
+            x++;
+            var isAdult = movieArray[i].adult;
+            var backdrop_path = movieArray[i].backdrop_path;
+            var genre_ids= movieArray[i].genre_ids;
+            var movieId = movieArray[i].id;
+            var title = movieArray[i].title;
+            
+         }   
+      });
 
 
 
