@@ -1,0 +1,38 @@
+/* line 1, ../compass/sass/style.scss */
+#total-wrapper {
+  width: 90%;
+  margin: 5% auto 5%;
+  overflow: hidden;
+}
+/* line 5, ../compass/sass/style.scss */
+#total-wrapper #search-form {
+  text-align: center;
+}
+/* line 7, ../compass/sass/style.scss */
+#total-wrapper #search-form #submit-button {
+  width: 80px;
+  height: 30px;
+  background-color: #c3c3c3;
+}
+/* line 12, ../compass/sass/style.scss */
+#total-wrapper #search-form input {
+  line-height: 20px;
+  width: 200px;
+  border-radius: 5px;
+}
+/* line 18, ../compass/sass/style.scss */
+#total-wrapper #movie-container {
+  width: 100%;
+  margin: auto;
+}
+/* line 21, ../compass/sass/style.scss */
+#total-wrapper #movie-container .movie {
+  float: left;
+  width: 20%;
+  margin: 2.5%;
+  height: 300px;
+}
+/* line 26, ../compass/sass/style.scss */
+#total-wrapper #movie-container .movie img {
+  max-width: 100%;
+}

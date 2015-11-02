@@ -1,0 +1,33 @@
+#total-wrapper{
+	width: 90%;
+	margin: 5% auto 5%;
+	overflow: hidden;
+	#search-form{
+		text-align: center;
+		#submit-button{
+			width: 80px;
+			height: 30px;
+			background-color: #c3c3c3;
+		}
+		input{
+			line-height: 20px;
+			width: 200px;
+			border-radius: 5px;
+		}
+	}
+	#movie-container{
+		width: 100%;
+		margin: auto;
+		.movie{
+			float: left;
+			width: 20%;
+			margin: 2.5%;
+			height: 300px;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+
+
+}
