@@ -449,9 +449,32 @@
             var genre_ids= movieArray[i].genre_ids;
             var movieId = movieArray[i].id;
             var title = movieArray[i].title;
+            var overview = movieArray[i].overview;
+            var popularity = movieArray[i].popularity;
+            var posterPath = movieArray[i].poster_path;
+            var releaseDate = movieArray[i].release_date;
+            var voteAverage = movieArray[i].vote_average;
+            var voteCount = movieArray[i].vote_count; 
+
+            if(i==0){
+               html += '<div class="movie-row">';
+            }   
+
+            if(x==5){
+               html += '</div>';
+               html += '<div class="movie-row">';
+               x=1;
+            }
+            html += '<div class="now-playing-movie">';
+            html += '<img title="'+overview+'" alt="'+title+'" src="'+basePath+'w300'+posterPath+'">';
+            html += '</div>';
             
-         }   
-      });
+            if(i == (movieArray.length-1)){
+               html += '</html>';
+               $(html).appendTo('#now-playing-wrapper');
+            }
+      }
+   });
 
 
 
